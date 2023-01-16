@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black More</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/disc/css/style.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="/disc/images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">CMEd คืออะไร</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">หาเภสัช CMEd</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="banner">
+        <img class="askme" src="/disc/images/askme.png" alt="Ask me more #ถามเภสัช CMEd ชัวร์กว่า">
+        <div class="content">
+            <h1>
+                ถามเภสัช
+                <img src="/disc/images/cmed.png" alt="cmed">
+                ชัวร์กว่า
+            </h1>
+            <p>ปรึกษาเภสัชกรเพื่อความปลอดภัย</p>
+        </div>
+    </div>
+
+    <div id="map-content">
+        <div class="int">
+            <input id="searchInput" type="text" placeholder="ค้นหาเภสัช CMEd">
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <div id="block-doctor">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="bl"><a href="#"><img src="/disc/images/doctor-1.jpg" alt="doctors"><i
+                                class="i-play"></i></a></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bl"><a href="#"><img src="/disc/images/doctor-2.jpg" alt="doctors"><i
+                                class="i-play"></i></a></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bl"><a href="#"><img src="/disc/images/doctor-3.jpg" alt="doctors"><i
+                                class="i-play"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"><img src="/disc/images/logo-footer.png" alt="" class="logo"></div>
+                <div class="col-md-6">
+                    <p class="text-right">@สงวนลิขสิทธิ์ 2566 นโยบายความเป็นส่วนตัว</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="/disc/js/index.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM2FYi2wezkjpypm1KcfUF4fPUej8oe08&callback=initMap&libraries=places&v=weekly"
+        defer></script>
+</body>
+
+</html>
