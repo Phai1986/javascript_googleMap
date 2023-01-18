@@ -9,7 +9,7 @@ function initMap() {
 
     let markers = [];
     let infowindows = [];
-    
+
     /*-------<Style----------*/
     const font = `style="font-family: 'Mitr', sans-serif"`;
     const bt = `style="font-family: 'Mitr', sans-serif;float: right;background-color: #00A8B6;color: #fff;padding: 5px 10px;border-radius: 5px"`
@@ -48,9 +48,10 @@ function initMap() {
 
     /*---------------json----------------*/
 
-    fetch('/api/maps.json')
-        .then((response) => response.json())
-        .then((json) => {
+    async function getData() {
+        try {
+            const response = await fetch('/api/maps.json');
+            const json = await response.json();
             const maps = json.maps;
             const name_store = [];
 
@@ -86,10 +87,13 @@ function initMap() {
             }
             input.addEventListener('change', queryMarket);
 
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
+        }
+        catch (err) {
+            console.log(err.massage);
+            alert(err.message);
+        }
+    }
+    getData();
 
 }
 window.initMap = initMap;
