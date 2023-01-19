@@ -8,6 +8,9 @@
     <title>Black More</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="/node_modules/iframe-lightbox/css/iframe-lightbox.css">
     <link rel="stylesheet" href="/disc/css/style.min.css">
 </head>
 
@@ -23,17 +26,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">หน้าแรก</a>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#header">หน้าแรก</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#">CMEd คืออะไร</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">หาเภสัช CMEd</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cmed_content">CMEd คืออะไร</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#map-content">หาเภสัช CMEd</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div id="banner">
+    <section id="banner">
         <img class="askme" src="/disc/images/askme.png" alt="Ask me more #ถามเภสัช CMEd ชัวร์กว่า">
         <div class="content">
             <h1>
@@ -43,33 +46,138 @@
             </h1>
             <p>ปรึกษาเภสัชกรเพื่อความปลอดภัย</p>
         </div>
-    </div>
+    </section>
 
-    <div id="map-content">
-        <div class="int">
-            <input id="searchInput" type="text" placeholder="ค้นหาเภสัช CMEd">
-        </div>
-        <div id="map"></div>
-    </div>
-
-    <div id="block-doctor">
-        <div class="container">
+    <section id="cmed_content" class="cmed_content">
+        <div class="container pb-5">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="bl"><a href="#"><img src="/disc/images/doctor-1.jpg" alt="doctors"><i
-                                class="i-play"></i></a></div>
+                <div class="col-md-6">
+                    <h2><img src="/disc/images/text-01.png" alt="หลักสูตร CMED คืออะไร?"></h2>
+                    <p>คือ หลักสูตรการศึกษาด้านผลิตภัณฑ์เสริมอาหาร หรือ Complementary Medicines Education (CMEd อ่านว่า
+                        ซี-เมด) หลักสูตรแรกที่พัฒนาโดยสถาบันแบลคมอร์ส (Blackmores Insititute)
+                        โดยส่งเสริมให้เภสัชกรมีความรู้เพิ่มเติมในของเรื่องโภชนเภสัชภัณฑ์
+                        เมื่อเภสัชกรได้รับการศึกษาจนครบหลักสูตร จะได้รับรางวัลในระดับสากลและเข็มกลัดตราสัญลักษณ์​ CMEd
+                        ที่ติดไว้บนหน้าอกแบ่งเป็น 3 ระดับ ได้แก่</p>
+                    <div class="list row">
+                        <div class="col-md-4">
+                            <img src="/disc/images/ic-01.png" alt="ขั้นพื้นฐาน (CMEdBronze Level)">
+                            <p>ขั้นพื้นฐาน <br />(CMEdBronze Level)</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/disc/images/ic-02.png" alt="ขั้นกลาง (CMEdSilver Level)">
+                            <p>ขั้นกลาง <br />(CMEdSilver Level)</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/disc/images/ic-03.png" alt="ขั้นสูง (CMEdGold Level)">
+                            <p>ขั้นสูง <br />(CMEdGold Level)</p>
+                        </div>
+                    </div>
+                    <p>นอกจากนี้ เภสัชกร CMEd ยังได้รับการฝึกอบรมระดับ Master Class
+                        ที่สามารถประยุกต์องค์ความรู้กับการทำงานจริงให้เกิดประสิทธิภาพสูงสุด ผ่านวิทยากรที่มีประสบการณ์
+                        และความเชี่ยวชาญจากสถาบันแบลคมอร์ส ทั้งนี้เภสัชกรจากหลักสูตร CMEd สามารถแนะนำขนาดยา
+                        ผลิตภัณฑ์เสริมสุขภาพ ได้อย่างถูกต้องและแม่นยำ</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="bl"><a href="#"><img src="/disc/images/doctor-2.jpg" alt="doctors"><i
-                                class="i-play"></i></a></div>
+                <div class="col-md-6 ">
+                    <img src="/disc/images/p1.png" alt="">
                 </div>
-                <div class="col-md-4">
-                    <div class="bl"><a href="#"><img src="/disc/images/doctor-3.jpg" alt="doctors"><i
-                                class="i-play"></i></a></div>
+            </div>
+            <a href="javascript:;" class="bt-lean">เรียนรู้เพิ่มเติม <span>&#9652</span></a>
+        </div>
+        <div class="hide-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <div class="align-middle">
+                            <div class="middle">
+                                <img src="/disc/images/cmed-use.png" alt="image เรียน CMED มีประโยชน์อย่างไร">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="align-middle">
+                            <div class="middle">
+                                <h2>เรียน CMED มีประโยชน์อย่างไร</h2>
+                                <ul>
+                                    <li>CMs ชนิดใดที่สามารถช่วยรักษาอาการ เหล่านั้นได้ </li>
+                                    <li>เมื่อใดที่จะสามารถสั่งจ่าย CMs ร่วมกับยาชนิดอื่นๆ ได้ </li>
+                                    <li>เราจะเลือกผลิตภัณฑ์ CMs ให้เหมาะสมกับผู้ป่วยอย่างไร </li>
+                                    <li>เรียนรู้ไปด้วยกันกับ CMEd Bonze, Silver และ Gold Level</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <img class="mt-5 mb-5" src="/disc/images/diagram.png" alt="CMEd vertification program">
+                    </div>
+                </div>
+            </div>
+            <div class="cmed-begin">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>เริ่มต้นเรียน CMEd อย่างไร ?</h2>
+                            <ul>
+                                <li>ลงทะเบียนเรียน (Sign Up) ผ่าน https://www.blackmoresinstitute.org/ </li>
+                                <li>เรียน CMEd Bronze Level Online จนจบ 7 Modules </li>
+                                <li>ลงทะเบียนเรียน Masterclass ใน Google form และ Add Line Group เรียน Masterclass
+                                    Bronze </li>
+                                <li>ทํา Assessment หลังเรียนเพียงเท่านี้ ก็สามารถลงเรียนใน Silver Level ต่อไปได้</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6"><img src="/disc/images/p3.png" alt="people read book"></div>
+                    </div>
+                    <div class="row mt-4 content-bottom">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-3"><img src="/disc/images/qrcode1.jpg" alt="ลงทะเบียนเรียนได้ที่">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>ลงทะเบียนเรียนได้ที่</h3>
+                                    <p>www.blackmoresinstitute.org</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-3"><img src="/disc/images/qrcode2.jpg"
+                                        alt="ติดต่อหรือรับคำแนะนำในการเรียน CMEd"></div>
+                                <div class="col-md-9">
+                                    <h3 class="mb-3">ติดต่อหรือรับคำแนะนำในการเรียน CMEd</h3>
+                                    <p><a href="#" target="_blank"><img src="/disc/images/ic-line.png" alt="">
+                                            @cmed_introduction</a></p>
+                                    <p><a href="#" target="_blank"><img src="/disc/images/ic-web.png" alt="">
+                                            education.th@blackmores.co.th</a></p>
+                                    <p><a href="#" target="_blank"><img src="/disc/images/ic-tel.png" alt=""> 02 203
+                                            7999</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="content-slide">
+        <div class="slide">
+            <div><img src="/disc/images/slide/banner02.jpg" alt=""></div>
+            <div><img src="/disc/images/slide/banner01.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <section id="map-content">
+        <div class="int">
+            <input id="searchInput" type="text" placeholder="หาเภสัช CMEd ใกล้บ้าน">
+        </div>
+        <div id="map"></div>
+    </section>
+
+    <section id="block-doctor">
+        <h2 class="text-center">ชวนคุยกับเภสัช CMEd</h2>
+        <div class="container">
+            <div class="slide"></div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
@@ -82,9 +190,11 @@
         </div>
     </footer>
 
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="/node_modules/iframe-lightbox/js/iframe-lightbox.js"></script>
     <script src="/disc/js/index.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM2FYi2wezkjpypm1KcfUF4fPUej8oe08&callback=initMap&libraries=places&v=weekly"

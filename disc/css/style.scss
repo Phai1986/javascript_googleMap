@@ -8,10 +8,15 @@
 html,
 body {
     font-family: 'Mitr', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 200;
     color: #333333;
     padding: 0;
     margin: 0;
+}
+
+img {
+    max-width: 100%;
 }
 
 a {
@@ -19,6 +24,13 @@ a {
     color: #333333;
 }
 
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
 
 header {
     width: 100%;
@@ -126,13 +138,124 @@ header {
     }
 }
 
+
+.cmed_content {
+    background-color: #FCF9FF;
+    padding: 80px 0 0;
+
+    .list {
+        img {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #00A8B6;
+        }
+    }
+
+    .bt-lean {
+        background-color: #00A8B6;
+        font-size: 16px;
+        padding: 5px 20px;
+        border-radius: 5px;
+        color: #fff;
+        border: 1px solid #00A8B6;
+        transition: all 0.3s linear;
+
+        &:hover {
+            background-color: #fff;
+            color: #00A8B6;
+        }
+
+        span {
+            font-size: 25px;
+            position: relative;
+            top: 4px;
+        }
+    }
+
+    h2 {
+        color: #00A8B6;
+    }
+
+    .align-middle {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        .middle {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 400px;
+
+            img {
+                max-width: fit-content;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        li {
+            background-image: url(/disc/images/li.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: left top 3px;
+            line-height: 1.5;
+            padding-left: 30px;
+            margin: 15px 0;
+        }
+    }
+
+    .hide-content {
+        transition: all .5s linear;
+        overflow: hidden;
+
+        .cmed-begin {
+            padding: 40px 0;
+        }
+
+        .content-bottom {
+            color: #00A8B6;
+
+            a {
+                color: #00A8B6;
+            }
+        }
+    }
+}
+
+.toggle-content {
+    height: auto !important;
+}
+
+.content-slide {
+    overflow: hidden;
+
+    .slide {
+        margin: 0;
+
+        .slick-dots {
+            bottom: 15px;
+        }
+    }
+}
+
 #map-content {
     position: relative;
 
     .int {
         width: 100%;
         position: absolute;
-        top: 20px;
+        top: 40px;
         left: 0;
         z-index: 1;
         text-align: center;
@@ -156,7 +279,7 @@ header {
         border-radius: 20px;
         color: #fff;
         padding: 10px 20px;
-        top: 10px!important;
+        top: 10px !important;
     }
 
     ::placeholder {
@@ -179,10 +302,17 @@ header {
 
 #block-doctor {
     background-color: #FCF0FA;
-    padding: 80px 0;
+    padding: 40px 0;
+    overflow: hidden;
+
+    h2 {
+        color: #ABBC47;
+        margin-bottom: 40px;
+    }
 
     .bl {
         position: relative;
+        margin: 15px;
         overflow: hidden;
 
         img {
@@ -217,6 +347,34 @@ header {
 
         }
     }
+
+    .profile {
+        font-size: 18px;
+        font-weight: 200;
+        margin: 20px 0;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #00a8b6;
+    }
+    .slick-dots li button:before {
+        font-size: 16px;
+    }
+    .slick-prev, .slick-next {
+        width: 45px;
+        height: 45px;
+        z-index: 1;
+    }
+    .slick-prev:before, .slick-next:before {
+        font-size: 45px;
+        color: #00a8b6;
+    }
+    .slick-prev {
+        left: -35px;
+    }
+    .slick-next {
+        right: -35px;
+    }
 }
 
 footer {
@@ -227,6 +385,8 @@ footer {
     color: #fff;
 
     .text-right {
+        font-size: 14px;
+        font-weight: 200;
         text-align: right;
         margin: 0;
         padding-top: 20px;

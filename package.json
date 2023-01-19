@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "iframe-lightbox": "^0.2.11",
+    "slick-carousel": "^1.8.1"
   }
 }
